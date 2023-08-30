@@ -82,10 +82,9 @@ export class AppComponent implements OnInit  {
 
   goDayForwardInvokeAngular() {
     if(GlobalConstants.isBuildForBusinessCentral) {
-
       //TODO: REMOVE THIS THIS IS JUST AN EXAMPLE
       //@ts-ignore
-      Microsoft.Dynamics.NAV.InvokeExtensibilityMethod("ControlReady", [ARG1, ARG2]);
+      Microsoft.Dynamics.NAV.InvokeExtensibilityMethod("InvokedFromAngular", ['arg1', 'arg2']);
     }
   }
 

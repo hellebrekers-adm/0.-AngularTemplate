@@ -12,6 +12,8 @@ echo "
 
 $mypath = $PSScriptRoot
 
+echo "mypath: " $mypath
+
 $config = (Get-Content ($mypath + "\configbuild.json") | ConvertFrom-Json)
 $buildPath = $config.PSObject.Properties.Value
 
